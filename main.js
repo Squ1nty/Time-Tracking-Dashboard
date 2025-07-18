@@ -54,15 +54,15 @@ function displayData(data, timeFrame){
 
   data.forEach(dataItem => {
     if(timeFrame === "daily"){
-      timeTrackedElementArray[index].textContent = dataItem.timeframes.daily.current;
+      timeTrackedElementArray[index].textContent = `${dataItem.timeframes.daily.current}${hourPluralDisplay(dataItem.timeframes.daily.current)}`;
       previousTimeTrackedElementArray[index].textContent = `Yesterday - ${dataItem.timeframes.daily.previous}${hourPluralDisplay(dataItem.timeframes.daily.previous)}`;
     }
     else if(timeFrame === "weekly"){
-      timeTrackedElementArray[index].textContent = dataItem.timeframes.weekly.current;
+      timeTrackedElementArray[index].textContent = `${dataItem.timeframes.weekly.current}${hourPluralDisplay(dataItem.timeframes.weekly.current)}`;
       previousTimeTrackedElementArray[index].textContent = `Last Week - ${dataItem.timeframes.weekly.previous}${hourPluralDisplay(dataItem.timeframes.weekly.previous)}`;
     }
     else if(timeFrame === "monthly"){
-      timeTrackedElementArray[index].textContent = dataItem.timeframes.monthly.current;
+      timeTrackedElementArray[index].textContent = `${dataItem.timeframes.monthly.current}${hourPluralDisplay(dataItem.timeframes.monthly.current)}`;
       previousTimeTrackedElementArray[index].textContent = `Last Month - ${dataItem.timeframes.monthly.previous}${hourPluralDisplay(dataItem.timeframes.monthly.previous)}`;
     }
     index++;
