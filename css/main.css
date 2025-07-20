@@ -1,0 +1,176 @@
+@media(max-width: 424px){
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+}
+body{
+  background-color: hsl(226, 43%, 10%);
+}
+main{
+  min-height: 100dvh;
+  padding: 4rem 1rem;
+
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#profileAndTimeFrameContainer{
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+#profileContainer{
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  background-color: hsl(246, 80%, 60%);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+
+  padding: 1rem 1.5rem;
+}
+#profileInfoContainer{
+  line-height: 1.5rem;
+}
+#reportForText, #userName{
+  font-weight: 300;
+}
+#reportForText{
+  font-size: 0.75rem;
+  color: hsl(236, 100%, 87%);
+}
+#userName{
+  font-size: 1.5rem;
+}
+#timeFrameBtnContainer{
+  padding: 1.5rem 2rem;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.timeFrameBtn{
+  background-color: transparent;
+  border: none;
+  color: hsl(236, 100%, 87%);
+  transition: 0.15s ease-in-out color;
+
+  cursor: pointer;
+}
+
+.activityContainer{
+  width: 100%;
+
+  border-radius: 1rem;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-rows: 1fr 3.5fr;
+}
+.dotMenuContainer{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 0;
+}
+.infoContainer{
+  padding: 1.5rem;
+  background-color: hsl(235, 46%, 20%);
+  transition: 0.15s ease-out background-color;
+
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  cursor: pointer;
+}
+
+.svgContainer{
+  position: relative;
+  overflow: hidden;
+}
+.containerIconSVG{  
+  z-index: 0;
+  position: absolute;
+  right: 5%;
+}
+
+#workSVG{
+  top: -35%;
+}
+#playSVG{
+  top: -20%;
+}
+#studySVG{
+  top: -30%;
+}
+#exerciseSVG{
+  top: -10%;
+}
+#socialSVG{
+  top: -50%;
+}
+#selfCareSVG{
+  top: -40%;
+}
+
+.activityContainerHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-weight: 500;
+}
+.timeTrackedContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-weight: 300;
+}
+.timeTracked{
+  font-size: 1.75rem;
+}
+.previousTracking{
+  font-size: 0.75rem;
+  color: hsl(236, 100%, 87%);
+}
+
+#workContainer{
+  background-color: hsl(15, 100%, 70%);
+}
+#playContainer{
+  background-color: hsl(195, 74%, 62%);
+}
+#studyContainer{
+  background-color: hsl(348, 100%, 68%);
+}
+#exerciseContainer{
+  background-color: hsl(145, 58%, 55%);
+}
+#socialContainer{
+  background-color: hsl(264, 64%, 52%);
+}
+#selfCareContainer{
+  background-color: hsl(43, 84%, 65%);
+}

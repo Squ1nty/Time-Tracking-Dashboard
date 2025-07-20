@@ -1,0 +1,12 @@
+.infoContainer:active{
+  background-color: hsl(235, 45%, 61%);
+}
+.timeFrameBtn:hover{
+  color: hsl(0, 0%, 100%);
+}
+.timeFrameBtn.active{
+  color: hsl(0, 0%, 100%);
+}
+.dotMenuContainer:hover .ellipsisMenuSVG{
+  fill: hsl(0, 0%, 100%);
+}
