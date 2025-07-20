@@ -1,19 +1,190 @@
-@media(max-width: 424px){
+@media(max-width: 1439px){
+  img{
+    width: 75px;
+  }
   main{
     display: flex;
     flex-direction: column;
+    padding: 4rem 1rem;
   }
+  #profileAndTimeFrameContainer{
+    justify-content: center;
+  }
+  #profileContainer{
+    align-items: center;
+    padding: 1rem 1.5rem;
+    gap: 1rem;
+  }
+  #profileInfoContainer{
+    line-height: 1.5rem;
+  }
+  #reportForText{
+    font-size: 0.75rem;
+  }
+  #userName{
+    font-size: 1.5rem;
+  }
+  #timeFrameBtnContainer{
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1.5rem 2rem;
+  }
+  .dotMenuContainer{
+    padding: 0.75rem 0;
+  }
+  .infoContainer{
+    padding: 1.5rem;
+  }
+  .timeTrackedContainer{
+    align-items: center;
+    justify-content: space-between;
+  }
+  .timeTracked{
+    font-size: 1.75rem;
+  }
+  
+  .containerIconSVG{
+    right: 5%;
+  }
+  #workSVG{
+    top: -35%;
+  }
+  #playSVG{
+    top: -20%;
+  }
+  #studySVG{
+    top: -30%;
+  }
+  #exerciseSVG{
+    top: -10%;
+  }
+  #socialSVG{
+    top: -50%;
+  }
+  #selfCareSVG{
+    top: -40%;
+  }
+
+}
+@media(min-width: 1440px){
+  img{
+    width: 85px;
+  }
+  main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    padding: 13rem 10rem;
+  }
+  .activityContainer{
+    height: 100%;
+  }
+  #profileAndTimeFrameContainer{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+
+    height: 100%;
+  }
+  #workContainer{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  #playContainer{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+  #studyContainer{
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+  }
+  #exerciseContainer{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  #socialContainer{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+  #selfCareContainer{
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+  }
+
+  #profileContainer{
+    flex-direction: column;
+    padding: 1.75rem;
+    padding-bottom: 4.5rem;
+    gap: 1.5rem;
+  }
+  #reportForText{
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+  }
+  #userName{
+    font-size: 2rem;
+  }
+  #timeFrameBtnContainer{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1.75rem;
+
+    height: 100%;
+  }
+
+  .infoContainer{
+    padding: 1.75rem;
+  }
+  .timeTrackedContainer{
+    margin-top: 0.75rem;
+    
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 0.5rem;
+
+    height: 100%;
+  }
+  .timeTracked{
+    font-size: 2.75rem;
+  }
+
+  .containerIconSVG{
+    right: 10%;
+    scale: 1.1;
+  }
+  #workSVG{
+    top: -5%;
+  }
+  #playSVG{
+    top: 5%;
+  }
+  #studySVG{
+    top: -5%;
+  }
+  #exerciseSVG{
+    top: 5%;
+  }
+  #socialSVG{
+    top: -15%;
+  }
+  #selfCareSVG{
+    top: -10%;
+  }
+
 }
 body{
   background-color: hsl(226, 43%, 10%);
 }
 main{
   min-height: 100dvh;
-  padding: 4rem 1rem;
+  width: 100%;
 
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  
+  gap: 1rem; /* Check this one */
 }
 
 #profileAndTimeFrameContainer{
@@ -21,7 +192,6 @@ main{
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 
   background-color: hsl(235, 46%, 20%);
@@ -33,36 +203,21 @@ main{
 
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 1rem;
 
   background-color: hsl(246, 80%, 60%);
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-
-  padding: 1rem 1.5rem;
-}
-#profileInfoContainer{
-  line-height: 1.5rem;
 }
 #reportForText, #userName{
   font-weight: 300;
 }
 #reportForText{
-  font-size: 0.75rem;
   color: hsl(236, 100%, 87%);
 }
-#userName{
-  font-size: 1.5rem;
-}
 #timeFrameBtnContainer{
-  padding: 1.5rem 2rem;
-
   width: 100%;
 
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .timeFrameBtn{
   background-color: transparent;
@@ -86,10 +241,8 @@ main{
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.75rem 0;
 }
 .infoContainer{
-  padding: 1.5rem;
   background-color: hsl(235, 46%, 20%);
   transition: 0.15s ease-out background-color;
 
@@ -112,27 +265,9 @@ main{
 .containerIconSVG{  
   z-index: 0;
   position: absolute;
-  right: 5%;
 }
+/* CHECK ALL OF THE ABSOLUTES */
 
-#workSVG{
-  top: -35%;
-}
-#playSVG{
-  top: -20%;
-}
-#studySVG{
-  top: -30%;
-}
-#exerciseSVG{
-  top: -10%;
-}
-#socialSVG{
-  top: -50%;
-}
-#selfCareSVG{
-  top: -40%;
-}
 
 .activityContainerHeader{
   display: flex;
@@ -143,14 +278,10 @@ main{
 }
 .timeTrackedContainer{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 
   font-weight: 300;
 }
-.timeTracked{
-  font-size: 1.75rem;
-}
+
 .previousTracking{
   font-size: 0.75rem;
   color: hsl(236, 100%, 87%);

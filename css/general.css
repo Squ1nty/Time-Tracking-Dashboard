@@ -12,7 +12,6 @@ svg{
   display: block;
 }
 img{
-  width: 75px;
   border: 3px solid hsl(0, 0%, 100%);
   border-radius: 75px;
 }
