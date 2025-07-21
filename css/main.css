@@ -1,4 +1,4 @@
-@media(max-width: 1439px){
+@media(max-width: 424px){
   img{
     width: 75px;
   }
@@ -43,7 +43,9 @@
   .timeTracked{
     font-size: 1.75rem;
   }
-  
+  .previousTracking{
+    font-size: 0.75rem;
+  }
   .containerIconSVG{
     right: 5%;
   }
@@ -64,6 +66,232 @@
   }
   #selfCareSVG{
     top: -40%;
+  }
+
+}
+@media(min-width: 425px) and (max-width: 767px){
+  img{
+    width: 85px;
+  }
+  main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    padding: 2rem;
+  }
+  .activityContainer{
+    height: 100%;
+  }
+  #profileAndTimeFrameContainer{
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+
+    height: 100%;
+  }
+  #workContainer{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  #playContainer{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  #studyContainer{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  #exerciseContainer{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+  #socialContainer{
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+  #selfCareContainer{
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+
+  #profileContainer{
+    align-items: center;
+    justify-content: center;
+
+    padding: 1.75rem;
+    padding-bottom: 2rem;
+    gap: 1.5rem;
+  }
+  #reportForText{
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+  }
+  #userName{
+    font-size: 2rem;
+  }
+  #timeFrameBtnContainer{
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 1.5rem 0;
+
+    height: 100%;
+  }
+
+  .infoContainer{
+    padding: 1.75rem;
+  }
+  .activityHeading{
+    font-size: 0.85rem;
+  }
+  .timeTrackedContainer{
+    margin-top: 0.75rem;
+    
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 0.5rem;
+
+    height: 100%;
+  }
+  .timeTracked{
+    font-size: 2rem;
+  }
+  .previousTracking{
+    font-size: 0.65rem;
+  }
+
+  .containerIconSVG{
+    right: 10%;
+    scale: 1.1;
+  }
+  #workSVG{
+    top: -5%;
+  }
+  #playSVG{
+    top: 5%;
+  }
+  #studySVG{
+    top: -5%;
+  }
+  #exerciseSVG{
+    top: 5%;
+  }
+  #socialSVG{
+    top: -15%;
+  }
+  #selfCareSVG{
+    top: -10%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1439px){
+  img{
+    width: 85px;
+  }
+  main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    padding: 2rem;
+  }
+  .activityContainer{
+    height: 100%;
+  }
+  .activityHeading{
+    font-size: 1.75rem;
+  }
+  #profileAndTimeFrameContainer{
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+
+    height: 100%;
+  }
+  #workContainer{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  #playContainer{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  #studyContainer{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+  #exerciseContainer{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  #socialContainer{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+  #selfCareContainer{
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+  }
+
+  #profileContainer{
+    padding: 1.75rem;
+    padding-bottom: 2rem;
+    gap: 1.5rem;
+  }
+  #reportForText{
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+  }
+  #userName{
+    font-size: 2.25rem;
+  }
+  #timeFrameBtnContainer{
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.25rem;
+
+    height: 100%;
+  }
+  .timeFrameBtn{
+    font-size: 1.25rem;
+  }
+
+  .infoContainer{
+    padding: 1.75rem;
+  }
+  .timeTrackedContainer{
+    margin-top: 0.75rem;
+    
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 0.5rem;
+
+    height: 100%;
+  }
+  .timeTracked{
+    font-size: 2.25rem;
+  }
+  .previousTracking{
+    font-size: 0.95rem;
+  }
+  .containerIconSVG{
+    right: 10%;
+    scale: 1.1;
+  }
+  #workSVG{
+    top: -5%;
+  }
+  #playSVG{
+    top: 5%;
+  }
+  #studySVG{
+    top: -5%;
+  }
+  #exerciseSVG{
+    top: 5%;
+  }
+  #socialSVG{
+    top: -15%;
+  }
+  #selfCareSVG{
+    top: -10%;
   }
 
 }
@@ -149,7 +377,9 @@
   .timeTracked{
     font-size: 2.75rem;
   }
-
+  .previousTracking{
+    font-size: 0.75rem;
+  }
   .containerIconSVG{
     right: 10%;
     scale: 1.1;
@@ -174,6 +404,9 @@
   }
 
 }
+
+
+
 body{
   background-color: hsl(226, 43%, 10%);
 }
@@ -184,7 +417,7 @@ main{
   justify-content: center;
   align-items: center;
   
-  gap: 1rem; /* Check this one */
+  gap: 1rem;
 }
 
 #profileAndTimeFrameContainer{
@@ -266,8 +499,6 @@ main{
   z-index: 0;
   position: absolute;
 }
-/* CHECK ALL OF THE ABSOLUTES */
-
 
 .activityContainerHeader{
   display: flex;
@@ -283,7 +514,6 @@ main{
 }
 
 .previousTracking{
-  font-size: 0.75rem;
   color: hsl(236, 100%, 87%);
 }
 
